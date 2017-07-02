@@ -14,6 +14,7 @@
 		2C5788E11F08E54200E9EB6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5788DF1F08E54200E9EB6A /* LaunchScreen.storyboard */; };
 		2C5788EC1F08E54200E9EB6A /* RxSwiftLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5788EB1F08E54200E9EB6A /* RxSwiftLoginTests.swift */; };
 		2C5788F71F08E54200E9EB6A /* RxSwiftLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5788F61F08E54200E9EB6A /* RxSwiftLoginUITests.swift */; };
+		2C5789051F08E56300E9EB6A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2C5789041F08E56300E9EB6A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2C5788F21F08E54200E9EB6A /* RxSwiftLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5788F61F08E54200E9EB6A /* RxSwiftLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftLoginUITests.swift; sourceTree = "<group>"; };
 		2C5788F81F08E54200E9EB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C5789041F08E56300E9EB6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2C5788CA1F08E54200E9EB6A = {
 			isa = PBXGroup;
 			children = (
+				2C5789041F08E56300E9EB6A /* README.md */,
 				2C5788D51F08E54200E9EB6A /* RxSwiftLogin */,
 				2C5788EA1F08E54200E9EB6A /* RxSwiftLoginTests */,
 				2C5788F51F08E54200E9EB6A /* RxSwiftLoginUITests */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5789051F08E56300E9EB6A /* README.md in Sources */,
 				2C5788D91F08E54200E9EB6A /* ViewController.swift in Sources */,
 				2C5788D71F08E54200E9EB6A /* AppDelegate.swift in Sources */,
 			);
