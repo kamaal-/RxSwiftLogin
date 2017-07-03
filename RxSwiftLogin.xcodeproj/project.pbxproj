@@ -17,6 +17,7 @@
 		2C5788F71F08E54200E9EB6A /* RxSwiftLoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5788F61F08E54200E9EB6A /* RxSwiftLoginUITests.swift */; };
 		2C5789051F08E56300E9EB6A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2C5789041F08E56300E9EB6A /* README.md */; };
 		2C5789071F08E69000E9EB6A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2C5789061F08E69000E9EB6A /* Podfile */; };
+		2C57890C1F0A614D00E9EB6A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C57890B1F0A614D00E9EB6A /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,8 @@
 		2C5788F61F08E54200E9EB6A /* RxSwiftLoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftLoginUITests.swift; sourceTree = "<group>"; };
 		2C5788F81F08E54200E9EB6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C5789041F08E56300E9EB6A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2C5789061F08E69000E9EB6A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2C5789061F08E69000E9EB6A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2C57890B1F0A614D00E9EB6A /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		323319ED006486AEB70DA1E9 /* Pods-RxSwiftLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLogin/Pods-RxSwiftLogin.release.xcconfig"; sourceTree = "<group>"; };
 		92731CC2092748E3850AE5C4 /* Pods-RxSwiftLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftLogin/Pods-RxSwiftLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		D830290541A6CBD9B56872D4 /* Pods_RxSwiftLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				2C5788DD1F08E54200E9EB6A /* Assets.xcassets */,
 				2C5788DF1F08E54200E9EB6A /* LaunchScreen.storyboard */,
 				2C5788E21F08E54200E9EB6A /* Info.plist */,
+				2C57890B1F0A614D00E9EB6A /* LoginViewModel.swift */,
 			);
 			path = RxSwiftLogin;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C57890C1F0A614D00E9EB6A /* LoginViewModel.swift in Sources */,
 				2C5789051F08E56300E9EB6A /* README.md in Sources */,
 				2C5788D91F08E54200E9EB6A /* ViewController.swift in Sources */,
 				2C5788D71F08E54200E9EB6A /* AppDelegate.swift in Sources */,
@@ -607,6 +611,7 @@
 				2C5788FD1F08E54200E9EB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C5788FE1F08E54200E9EB6A /* Build configuration list for PBXNativeTarget "RxSwiftLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +620,7 @@
 				2C5789001F08E54200E9EB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C5789011F08E54200E9EB6A /* Build configuration list for PBXNativeTarget "RxSwiftLoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +629,7 @@
 				2C5789031F08E54200E9EB6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
