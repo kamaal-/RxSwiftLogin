@@ -2,6 +2,6 @@
 use_frameworks!
 
 target 'RxSwiftLogin' do
-    pod 'RxSwift',    '~> 3.5'
-    pod 'RxCocoa',    '~> 3.5'
+    pod 'RxSwift',    :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'rxswift4.0-swift4.0'
+    pod 'RxCocoa',    :git => 'https://github.com/ReactiveX/RxSwift.git', :branch => 'rxswift4.0-swift4.0'
 end
