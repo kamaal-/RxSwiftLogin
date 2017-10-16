@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct LoginViewModel {
+    var username: String = ""
+    var password: String = ""
+    
+    func attemptToLogin() {
+        let params = [
+            "username": username,
+            "password": password
+        ]
+        
+    }
+}
