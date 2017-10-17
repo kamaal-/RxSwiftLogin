@@ -7,16 +7,18 @@
 //
 
 import Foundation
+import RxSwift
 
 struct LoginViewModel {
-    var username: String = ""
-    var password: String = ""
     
-    func attemptToLogin() {
-        let params = [
-            "username": username,
-            "password": password
-        ]
-        
+    let username = Variable<String>("")
+    let password = Variable<String>("")
+    let isValid: Observable<Bool>
+    
+    init() {
+        isValid = Observable.combineLatest(self.username.asObservable(), self.password.asObservable()) {
+            (username, password) in
+            return username.characters.count > 0 && password.characters.count > 0
+        }
     }
 }

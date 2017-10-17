@@ -7,20 +7,33 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmButton: UIButton!
+    
+    var loginViewModel = LoginViewModel()
+    var bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        usernameTextField.rx.text
+            .orEmpty
+            .bind(to: loginViewModel.username)
+            .disposed(by: bag)
+        
+        passwordTextField.rx.text
+            .orEmpty
+            .bind(to: loginViewModel.password)
+            .disposed(by: bag)
+        
+        loginViewModel.isValid
+            .bind(to: confirmButton.rx.isEnabled)
+            .disposed(by: bag)
+        
     }
 }
-
